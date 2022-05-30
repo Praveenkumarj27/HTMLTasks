@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            display: flex;
+            font-family: serif;
+            display: grid;
+            place-content: center;
+            height: 100vh;
+        }
+        .style{
+            border: 3px solid black;
+            display: inline-block;
+            padding: 5px 10px 5px 15px; 
+            font-weight: 520;
+            font-family: sans-serif
+            
+        }
+        h3{
+           background-color: red;
+           color: white;
+           font-size: larger;
+           padding-left: 10px;
+           padding-top: 1px;
+           padding-bottom: 1px;
+           text-align: center;
+           
+        }
+    </style>
+</head>
+<body>
+   <div class="style">
+    <h3>Yes! I want to subscribe to Mag-O-Zine</h3>
+    <input type="text" placeholder="First Name">
+    <input type="text" placeholder="Lastname Name"><br>
+    <input type="text" placeholder="Addeess"><br>
+    <input type="text" placeholder="city">
+    <input type="text" placeholder="State">
+    <input type="text" placeholder="Zip"><br>
+
+    <label for="on">Subscribe for:</label>
+    <input type="checkbox" id="on">
+    <label for="on">1 year($19.95)</label>
+    <input type="checkbox" id="on">
+    <label for="on">2 year($35.00)</label><br>
+
+    <label>Send me more information about:</label><br>
+    <input type="checkbox" id="info">
+    <label for="info">Computer-Zine</label><br>
+
+    <input type="checkbox" id="info1">
+    <label for="info1">Fishing-Zine</label><br>
+
+    <input type="checkbox" id="info2">
+    <label for="info2">Cat-O-Zine</label><br>
+    
+   </div>
+</body>
+</html>
