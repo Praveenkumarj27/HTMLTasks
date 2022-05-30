@@ -5,9 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <style>
         body{
-            display: flex;
+            
             font-family: serif;
             display: grid;
             place-content: center;
@@ -18,7 +25,7 @@
             display: inline-block;
             padding: 5px 10px 5px 15px; 
             font-weight: 520;
-            font-family: sans-serif
+            width: 80%;
             
         }
         h3{
@@ -31,17 +38,64 @@
            text-align: center;
            
         }
+        input{
+            border: none;
+            outline: none;
+            border-bottom: 2px solid black;
+            text-align: center;
+            font-weight: 500;
+            font-style: italic;
+            font-family: 'Pacifico', cursive;
+            font-size: medium;
+            
+        }
+        .ln{
+            margin-left: 50px;
+        }
+        .lnname{
+            margin-left: 38%;
+        }
+        .addname{
+            width: 88%;
+        }
+        .statename{
+            margin-left: 23%;
+        }
+        .zipname{
+            margin-left: 24%;
+        }
+        .city{
+           width: 15%;
+        }
+        .state{
+            width: 18%;
+            margin-left: 12%;
+        }
+        .zip{
+            width: 18%;
+            margin-left: 10%;
+        }
+        .add{
+            width: 88%;
+        }
+       
     </style>
 </head>
 <body>
    <div class="style">
     <h3>Yes! I want to subscribe to Mag-O-Zine</h3>
-    <input type="text" placeholder="First Name">
-    <input type="text" placeholder="Lastname Name"><br>
-    <input type="text" placeholder="Addeess"><br>
-    <input type="text" placeholder="city">
-    <input type="text" placeholder="State">
-    <input type="text" placeholder="Zip"><br>
+    <input type="text" id="fname"placeholder="joe">
+    <input type="text" id="lname" class="ln" placeholder="Schnegeggie"><br>
+    <label for="fname"><small>First Name</small></label>
+    <label for="lname" class="lnname"><small>Last Name</small></label><br>
+    <input type="text" id="address" class="add" placeholder="1001 Washington Street"><br>
+    <label for="lname"><small>Address</small></label><br>
+    <input type="text" placeholder="Anytown" class="city">
+    <input type="text" placeholder="CA" class="state">
+    <input type="text" placeholder="888888" class="zip"><br>
+    <label for="lname" class="cityname"><small>City</small></label>
+    <label for="lname" class="statename"><small>State</small></label>
+    <label for="lname" class="zipname"><small>Zip</small></label><br>
 
     <label for="on">Subscribe for:</label>
     <input type="checkbox" id="on">
